@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace MovieStreamingSystem.Models
+{
+    public class User
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime? UpdatedAt { get; set; }
+
+        // Navigation Properties
+        public List<Review> Reviews { get; set; } = new List<Review>();
+        public List<Watchlist> Watchlists { get; set; } = new List<Watchlist>();
+    }
+}

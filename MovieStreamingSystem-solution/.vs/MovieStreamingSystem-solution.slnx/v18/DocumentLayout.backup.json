@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|c:\\users\\noura\\onedrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\w5\\moviestreamingsystem-solution\\moviestreamingsystem\\models\\watchlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|solutionrelative:moviestreamingsystem\\models\\watchlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Migrations\\20260517114605_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MovieStreamingSystem\\Migrations\\20260517114605_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Migrations\\20260517114141_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MovieStreamingSystem\\Migrations\\20260517114141_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|c:\\users\\noura\\onedrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\w5\\moviestreamingsystem-solution\\moviestreamingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|solutionrelative:moviestreamingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|c:\\users\\noura\\onedrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\w5\\moviestreamingsystem-solution\\moviestreamingsystem\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|solutionrelative:moviestreamingsystem\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|c:\\users\\noura\\onedrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\w5\\moviestreamingsystem-solution\\moviestreamingsystem\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|solutionrelative:moviestreamingsystem\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|c:\\users\\noura\\onedrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\w5\\moviestreamingsystem-solution\\moviestreamingsystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|solutionrelative:moviestreamingsystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|c:\\users\\noura\\onedrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\w5\\moviestreamingsystem-solution\\moviestreamingsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|solutionrelative:moviestreamingsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|c:\\users\\noura\\onedrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\w5\\moviestreamingsystem-solution\\moviestreamingsystem\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|solutionrelative:moviestreamingsystem\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Migrations\\20260517113400_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MovieStreamingSystem\\Migrations\\20260517113400_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|c:\\users\\noura\\onedrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\w5\\moviestreamingsystem-solution\\moviestreamingsystem\\services\\watchlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|solutionrelative:moviestreamingsystem\\services\\watchlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|c:\\users\\noura\\onedrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\w5\\moviestreamingsystem-solution\\moviestreamingsystem\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|solutionrelative:moviestreamingsystem\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|c:\\users\\noura\\onedrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\w5\\moviestreamingsystem-solution\\moviestreamingsystem\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|solutionrelative:moviestreamingsystem\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|c:\\users\\noura\\onedrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\w5\\moviestreamingsystem-solution\\moviestreamingsystem\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|solutionrelative:moviestreamingsystem\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|c:\\users\\noura\\onedrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\w5\\moviestreamingsystem-solution\\moviestreamingsystem\\moviestreamingsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B2ACCB57-05AE-48DC-905B-088663488F08}|MovieStreamingSystem\\MovieStreamingSystem.csproj|solutionrelative:moviestreamingsystem\\moviestreamingsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Migrations\\20260517112003_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MovieStreamingSystem\\Migrations\\20260517112003_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20260517114605_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Migrations\\20260517114605_InitialCreate.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Migrations\\20260517114605_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Migrations\\20260517114605_InitialCreate.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Migrations\\20260517114605_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:46:05.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20260517114141_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Migrations\\20260517114141_InitialCreate.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Migrations\\20260517114141_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Migrations\\20260517114141_InitialCreate.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Migrations\\20260517114141_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:41:41.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Models\\Movie.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Models\\Movie.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Models\\Movie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:15:17.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Models\\User.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Models\\User.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:14:32.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Watchlist.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Models\\Watchlist.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Models\\Watchlist.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Models\\Watchlist.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Models\\Watchlist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:16:58.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAADwv0cAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:17:49.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Models\\Category.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:14:54.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Models\\Review.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Models\\Review.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:16:00.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Program.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Program.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Program.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAADwv3QAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:07:51.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20260517113400_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Migrations\\20260517113400_InitialCreate.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Migrations\\20260517113400_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Migrations\\20260517113400_InitialCreate.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Migrations\\20260517113400_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:34:00.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WatchlistService.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Services\\WatchlistService.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Services\\WatchlistService.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Services\\WatchlistService.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Services\\WatchlistService.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAIwFsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:32:31.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReviewService.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Services\\ReviewService.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Services\\ReviewService.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Services\\ReviewService.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Services\\ReviewService.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAcwBcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:31:33.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Services\\UserService.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Services\\UserService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwBwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:30:41.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MovieService.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Services\\MovieService.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Services\\MovieService.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Services\\MovieService.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Services\\MovieService.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAYwB8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:28:39.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MovieStreamingSystem",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\MovieStreamingSystem.csproj",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\MovieStreamingSystem.csproj",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\MovieStreamingSystem.csproj",
+              "RelativeToolTip": "MovieStreamingSystem\\MovieStreamingSystem.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-17T11:17:15.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20260517112003_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Migrations\\20260517112003_InitialCreate.cs",
+              "RelativeDocumentMoniker": "MovieStreamingSystem\\Migrations\\20260517112003_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\noura\\OneDrive\\\u0627\u0644\u0645\u0633\u062A\u0646\u062F\u0627\u062A\\W5\\MovieStreamingSystem-solution\\MovieStreamingSystem\\Migrations\\20260517112003_InitialCreate.cs",
+              "RelativeToolTip": "MovieStreamingSystem\\Migrations\\20260517112003_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T11:20:04.151Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
