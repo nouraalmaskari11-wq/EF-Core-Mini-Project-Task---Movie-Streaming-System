@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MovieStreamingWinForms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e49564e22b06a49bb507c48b0248b945160917b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MovieStreamingWinForms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MovieStreamingWinForms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

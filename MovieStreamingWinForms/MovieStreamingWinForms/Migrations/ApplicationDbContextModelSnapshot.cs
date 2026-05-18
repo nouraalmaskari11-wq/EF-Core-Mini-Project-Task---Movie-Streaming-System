@@ -31,7 +31,6 @@ namespace MovieStreamingWinForms.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -81,7 +80,6 @@ namespace MovieStreamingWinForms.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
@@ -91,14 +89,68 @@ namespace MovieStreamingWinForms.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Movies");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(2949),
+                            Description = "Dream within dreams",
+                            IsDeleted = false,
+                            ReleaseYear = 2010,
+                            Title = "Inception"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(2951),
+                            Description = "Wild bachelor party",
+                            IsDeleted = false,
+                            ReleaseYear = 2009,
+                            Title = "The Hangover"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(2953),
+                            Description = "Batman vs Joker",
+                            IsDeleted = false,
+                            ReleaseYear = 2008,
+                            Title = "The Dark Knight"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(2955),
+                            Description = "Space travel",
+                            IsDeleted = false,
+                            ReleaseYear = 2014,
+                            Title = "Interstellar"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(2956),
+                            Description = "High school graduates",
+                            IsDeleted = false,
+                            ReleaseYear = 2007,
+                            Title = "Superbad"
+                        });
                 });
 
             modelBuilder.Entity("MovieStreamingWinForms.Models.Review", b =>
@@ -110,7 +162,6 @@ namespace MovieStreamingWinForms.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Comment")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
@@ -125,6 +176,9 @@ namespace MovieStreamingWinForms.Migrations
                     b.Property<int>("Rating")
                         .HasColumnType("int");
 
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
@@ -135,6 +189,48 @@ namespace MovieStreamingWinForms.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Reviews");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Comment = "Mind-blowing movie!",
+                            CreatedAt = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(3025),
+                            IsDeleted = false,
+                            MovieId = 1,
+                            Rating = 5,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Comment = "Confusing but great",
+                            CreatedAt = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(3027),
+                            IsDeleted = false,
+                            MovieId = 1,
+                            Rating = 4,
+                            UserId = 3
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Comment = "Hilarious! Loved it",
+                            CreatedAt = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(3028),
+                            IsDeleted = false,
+                            MovieId = 2,
+                            Rating = 5,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Comment = "Best Batman ever",
+                            CreatedAt = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(3030),
+                            IsDeleted = false,
+                            MovieId = 3,
+                            Rating = 5,
+                            UserId = 3
+                        });
                 });
 
             modelBuilder.Entity("MovieStreamingWinForms.Models.User", b =>
@@ -149,16 +245,52 @@ namespace MovieStreamingWinForms.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedAt = new DateTime(2026, 5, 18, 9, 52, 2, 653, DateTimeKind.Local).AddTicks(4688),
+                            Email = "admin@example.com",
+                            Name = "Admin",
+                            PasswordHash = "$2a$11$Uzqm.NB39O/QbQ2nZEFbe.t34C6J5Ws/9wDkN9rxi9wejBYENkyly",
+                            Role = "Admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedAt = new DateTime(2026, 5, 18, 9, 52, 2, 760, DateTimeKind.Local).AddTicks(7933),
+                            Email = "ahmed@example.com",
+                            Name = "Ahmed Mansour",
+                            PasswordHash = "$2a$11$31ErVezRDwNc0Z7/iQnGcuDYzlaCZIgC8Xfy34Hg1X9tY0ri.vDmy",
+                            Role = "User"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedAt = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(2432),
+                            Email = "sara@example.com",
+                            Name = "Sara Khalid",
+                            PasswordHash = "$2a$11$XPtbaXHUG8mC92IX8s0mse29G4YM2e3RRawj5CJRUmUyg.wXqu.Qy",
+                            Role = "User"
+                        });
                 });
 
             modelBuilder.Entity("MovieStreamingWinForms.Models.Watchlist", b =>
@@ -177,6 +309,32 @@ namespace MovieStreamingWinForms.Migrations
                     b.HasIndex("MovieId");
 
                     b.ToTable("Watchlists");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 2,
+                            MovieId = 2,
+                            AddedDate = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(3069)
+                        },
+                        new
+                        {
+                            UserId = 2,
+                            MovieId = 4,
+                            AddedDate = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(3070)
+                        },
+                        new
+                        {
+                            UserId = 3,
+                            MovieId = 1,
+                            AddedDate = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(3072)
+                        },
+                        new
+                        {
+                            UserId = 3,
+                            MovieId = 3,
+                            AddedDate = new DateTime(2026, 5, 18, 9, 52, 2, 868, DateTimeKind.Local).AddTicks(3073)
+                        });
                 });
 
             modelBuilder.Entity("MovieStreamingWinForms.Models.Movie", b =>
@@ -184,7 +342,7 @@ namespace MovieStreamingWinForms.Migrations
                     b.HasOne("MovieStreamingWinForms.Models.Category", "Category")
                         .WithMany("Movies")
                         .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Category");
@@ -195,13 +353,13 @@ namespace MovieStreamingWinForms.Migrations
                     b.HasOne("MovieStreamingWinForms.Models.Movie", "Movie")
                         .WithMany("Reviews")
                         .HasForeignKey("MovieId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("MovieStreamingWinForms.Models.User", "User")
                         .WithMany("Reviews")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Movie");
@@ -214,13 +372,13 @@ namespace MovieStreamingWinForms.Migrations
                     b.HasOne("MovieStreamingWinForms.Models.Movie", "Movie")
                         .WithMany("Watchlists")
                         .HasForeignKey("MovieId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("MovieStreamingWinForms.Models.User", "User")
                         .WithMany("Watchlists")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Movie");

@@ -15,15 +15,23 @@
 
         private void InitializeComponent()
         {
-            // ==================== MAIN TAB CONTROL ====================
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle13 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle14 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle15 = new DataGridViewCellStyle();
             tabControl1 = new TabControl();
             tabMovies = new TabPage();
-            tabUsers = new TabPage();
-            tabReviews = new TabPage();
-            tabWatchlist = new TabPage();
-            tabReports = new TabPage();
-
-            // ==================== MOVIES TAB ====================
             dataGridViewMovies = new DataGridView();
             btnLoadMovies = new Button();
             btnAddMovie = new Button();
@@ -34,9 +42,7 @@
             lblMovieTitle = new Label();
             lblMovieYear = new Label();
             lblCategory = new Label();
-            panelMovieInput = new Panel();
-
-            // ==================== USERS TAB ====================
+            tabUsers = new TabPage();
             dataGridViewUsers = new DataGridView();
             btnLoadUsers = new Button();
             btnAddUser = new Button();
@@ -44,23 +50,19 @@
             txtUserEmail = new TextBox();
             lblUserName = new Label();
             lblUserEmail = new Label();
-            panelUserInput = new Panel();
-
-            // ==================== REVIEWS TAB ====================
+            tabReviews = new TabPage();
             dataGridViewReviews = new DataGridView();
             btnLoadReviews = new Button();
             btnAddReview = new Button();
-            cmbMovieForReview = new ComboBox();
             cmbUserForReview = new ComboBox();
+            cmbMovieForReview = new ComboBox();
             txtReviewComment = new TextBox();
             numRating = new NumericUpDown();
-            lblReviewMovie = new Label();
             lblReviewUser = new Label();
+            lblReviewMovie = new Label();
             lblReviewComment = new Label();
             lblReviewRating = new Label();
-            panelReviewInput = new Panel();
-
-            // ==================== WATCHLIST TAB ====================
+            tabWatchlist = new TabPage();
             dataGridViewWatchlist = new DataGridView();
             btnLoadWatchlist = new Button();
             btnAddToWatchlist = new Button();
@@ -69,17 +71,28 @@
             cmbMovieForWatchlist = new ComboBox();
             lblWatchlistUser = new Label();
             lblWatchlistMovie = new Label();
-            panelWatchlistInput = new Panel();
-
-            // ==================== REPORTS TAB ====================
+            tabReports = new TabPage();
             dataGridViewReports = new DataGridView();
             btnTopRated = new Button();
             btnFilterByCategory = new Button();
             cmbFilterCategory = new ComboBox();
             lblFilterCategory = new Label();
-            panelReportsInput = new Panel();
-
-            // ==================== TAB CONTROL SETUP ====================
+            tabControl1.SuspendLayout();
+            tabMovies.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMovies).BeginInit();
+            tabUsers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).BeginInit();
+            tabReviews.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewReviews).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numRating).BeginInit();
+            tabWatchlist.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewWatchlist).BeginInit();
+            tabReports.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewReports).BeginInit();
+            SuspendLayout();
+            // 
+            // tabControl1
+            // 
             tabControl1.Controls.Add(tabMovies);
             tabControl1.Controls.Add(tabUsers);
             tabControl1.Controls.Add(tabReviews);
@@ -88,464 +101,620 @@
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Font = new Font("Segoe UI", 10F);
             tabControl1.Location = new Point(0, 0);
-            tabControl1.Size = new Size(950, 650);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(884, 561);
             tabControl1.TabIndex = 0;
-
-            // ==================== MOVIES TAB ====================
-            tabMovies.Text = " Movies ";
-            tabMovies.BackColor = Color.FromArgb(25, 25, 35);
+            // 
+            // tabMovies
+            // 
+            tabMovies.BackColor = Color.White;
             tabMovies.Controls.Add(dataGridViewMovies);
-            tabMovies.Controls.Add(panelMovieInput);
             tabMovies.Controls.Add(btnLoadMovies);
             tabMovies.Controls.Add(btnAddMovie);
             tabMovies.Controls.Add(btnSoftDeleteMovie);
-
-            // DataGridView Movies
-            dataGridViewMovies.Location = new Point(20, 20);
-            dataGridViewMovies.Size = new Size(580, 300);
-            dataGridViewMovies.BackgroundColor = Color.FromArgb(30, 30, 40);
-            dataGridViewMovies.ForeColor = Color.White;
-            dataGridViewMovies.GridColor = Color.FromArgb(60, 60, 70);
+            tabMovies.Controls.Add(txtMovieTitle);
+            tabMovies.Controls.Add(txtMovieYear);
+            tabMovies.Controls.Add(cmbCategory);
+            tabMovies.Controls.Add(lblMovieTitle);
+            tabMovies.Controls.Add(lblMovieYear);
+            tabMovies.Controls.Add(lblCategory);
+            tabMovies.Location = new Point(4, 26);
+            tabMovies.Name = "tabMovies";
+            tabMovies.Size = new Size(876, 531);
+            tabMovies.TabIndex = 0;
+            tabMovies.Text = " Movies ";
+            // 
+            // dataGridViewMovies
+            // 
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(240, 244, 248);
+            dataGridViewMovies.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewMovies.BackgroundColor = Color.White;
             dataGridViewMovies.BorderStyle = BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(0, 120, 215);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridViewMovies.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(248, 249, 250);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dataGridViewMovies.DefaultCellStyle = dataGridViewCellStyle3;
             dataGridViewMovies.EnableHeadersVisualStyles = false;
-            dataGridViewMovies.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0, 120, 215);
-            dataGridViewMovies.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewMovies.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
-            dataGridViewMovies.DefaultCellStyle.BackColor = Color.FromArgb(35, 35, 45);
-            dataGridViewMovies.DefaultCellStyle.ForeColor = Color.White;
-            dataGridViewMovies.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 120, 215);
-            dataGridViewMovies.DefaultCellStyle.SelectionForeColor = Color.White;
-            dataGridViewMovies.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(40, 40, 50);
+            dataGridViewMovies.Location = new Point(20, 20);
+            dataGridViewMovies.Name = "dataGridViewMovies";
             dataGridViewMovies.RowHeadersVisible = false;
-
-            // Panel Movie Input
-            panelMovieInput.BackColor = Color.FromArgb(45, 45, 55);
-            panelMovieInput.BorderStyle = BorderStyle.FixedSingle;
-            panelMovieInput.Location = new Point(20, 340);
-            panelMovieInput.Size = new Size(580, 130);
-            panelMovieInput.Controls.Add(lblMovieTitle);
-            panelMovieInput.Controls.Add(txtMovieTitle);
-            panelMovieInput.Controls.Add(lblMovieYear);
-            panelMovieInput.Controls.Add(txtMovieYear);
-            panelMovieInput.Controls.Add(lblCategory);
-            panelMovieInput.Controls.Add(cmbCategory);
-
-            // Labels and TextBoxes
-            lblMovieTitle.Text = "Title:";
-            lblMovieTitle.ForeColor = Color.White;
-            lblMovieTitle.Location = new Point(20, 20);
-            lblMovieTitle.Size = new Size(60, 25);
-
-            txtMovieTitle.Location = new Point(80, 18);
-            txtMovieTitle.Size = new Size(180, 27);
-            txtMovieTitle.BackColor = Color.FromArgb(60, 60, 70);
-            txtMovieTitle.ForeColor = Color.White;
-            txtMovieTitle.BorderStyle = BorderStyle.FixedSingle;
-
-            lblMovieYear.Text = "Year:";
-            lblMovieYear.ForeColor = Color.White;
-            lblMovieYear.Location = new Point(280, 20);
-            lblMovieYear.Size = new Size(60, 25);
-
-            txtMovieYear.Location = new Point(330, 18);
-            txtMovieYear.Size = new Size(100, 27);
-            txtMovieYear.BackColor = Color.FromArgb(60, 60, 70);
-            txtMovieYear.ForeColor = Color.White;
-            txtMovieYear.BorderStyle = BorderStyle.FixedSingle;
-
-            lblCategory.Text = "Category:";
-            lblCategory.ForeColor = Color.White;
-            lblCategory.Location = new Point(20, 60);
-            lblCategory.Size = new Size(80, 25);
-
-            cmbCategory.Location = new Point(100, 58);
-            cmbCategory.Size = new Size(150, 27);
-            cmbCategory.BackColor = Color.FromArgb(60, 60, 70);
-            cmbCategory.ForeColor = Color.White;
-            cmbCategory.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbCategory.FlatStyle = FlatStyle.Flat;
-
-            // Buttons
-            btnLoadMovies.Text = "Load Movies";
+            dataGridViewMovies.Size = new Size(580, 300);
+            dataGridViewMovies.TabIndex = 0;
+            // 
+            // btnLoadMovies
+            // 
             btnLoadMovies.BackColor = Color.FromArgb(0, 120, 215);
-            btnLoadMovies.ForeColor = Color.White;
             btnLoadMovies.FlatStyle = FlatStyle.Flat;
-            btnLoadMovies.FlatAppearance.BorderSize = 0;
-            btnLoadMovies.Location = new Point(630, 30);
+            btnLoadMovies.ForeColor = Color.White;
+            btnLoadMovies.Location = new Point(630, 59);
+            btnLoadMovies.Name = "btnLoadMovies";
             btnLoadMovies.Size = new Size(140, 40);
-            btnLoadMovies.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            btnLoadMovies.TabIndex = 1;
+            btnLoadMovies.Text = "Load Movies";
+            btnLoadMovies.UseVisualStyleBackColor = false;
             btnLoadMovies.Click += btnLoadMovies_Click;
-
-            btnAddMovie.Text = "Add Movie";
+            // 
+            // btnAddMovie
+            // 
             btnAddMovie.BackColor = Color.FromArgb(40, 167, 69);
-            btnAddMovie.ForeColor = Color.White;
             btnAddMovie.FlatStyle = FlatStyle.Flat;
-            btnAddMovie.FlatAppearance.BorderSize = 0;
-            btnAddMovie.Location = new Point(630, 90);
-            btnAddMovie.Size = new Size(140, 40);
-            btnAddMovie.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            btnAddMovie.ForeColor = Color.White;
+            btnAddMovie.Location = new Point(590, 265);
+            btnAddMovie.Name = "btnAddMovie";
+            btnAddMovie.Size = new Size(124, 40);
+            btnAddMovie.TabIndex = 2;
+            btnAddMovie.Text = "Add Movie";
+            btnAddMovie.UseVisualStyleBackColor = false;
             btnAddMovie.Click += btnAddMovie_Click;
-
-            btnSoftDeleteMovie.Text = "Soft Delete";
+            // 
+            // btnSoftDeleteMovie
+            // 
             btnSoftDeleteMovie.BackColor = Color.FromArgb(220, 53, 69);
-            btnSoftDeleteMovie.ForeColor = Color.White;
             btnSoftDeleteMovie.FlatStyle = FlatStyle.Flat;
-            btnSoftDeleteMovie.FlatAppearance.BorderSize = 0;
-            btnSoftDeleteMovie.Location = new Point(630, 150);
+            btnSoftDeleteMovie.ForeColor = Color.White;
+            btnSoftDeleteMovie.Location = new Point(630, 105);
+            btnSoftDeleteMovie.Name = "btnSoftDeleteMovie";
             btnSoftDeleteMovie.Size = new Size(140, 40);
-            btnSoftDeleteMovie.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            btnSoftDeleteMovie.TabIndex = 3;
+            btnSoftDeleteMovie.Text = "Soft Delete";
+            btnSoftDeleteMovie.UseVisualStyleBackColor = false;
             btnSoftDeleteMovie.Click += btnSoftDeleteMovie_Click;
-
-            // ==================== USERS TAB ====================
-            tabUsers.Text = " Users ";
-            tabUsers.BackColor = Color.FromArgb(25, 25, 35);
+            // 
+            // txtMovieTitle
+            // 
+            txtMovieTitle.Location = new Point(590, 326);
+            txtMovieTitle.Name = "txtMovieTitle";
+            txtMovieTitle.Size = new Size(180, 25);
+            txtMovieTitle.TabIndex = 4;
+            // 
+            // txtMovieYear
+            // 
+            txtMovieYear.Location = new Point(590, 371);
+            txtMovieYear.Name = "txtMovieYear";
+            txtMovieYear.Size = new Size(100, 25);
+            txtMovieYear.TabIndex = 5;
+            // 
+            // cmbCategory
+            // 
+            cmbCategory.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbCategory.Location = new Point(590, 417);
+            cmbCategory.Name = "cmbCategory";
+            cmbCategory.Size = new Size(150, 25);
+            cmbCategory.TabIndex = 6;
+            // 
+            // lblMovieTitle
+            // 
+            lblMovieTitle.Location = new Point(500, 328);
+            lblMovieTitle.Name = "lblMovieTitle";
+            lblMovieTitle.Size = new Size(100, 23);
+            lblMovieTitle.TabIndex = 7;
+            lblMovieTitle.Text = "Title:";
+            // 
+            // lblMovieYear
+            // 
+            lblMovieYear.Location = new Point(500, 371);
+            lblMovieYear.Name = "lblMovieYear";
+            lblMovieYear.Size = new Size(100, 23);
+            lblMovieYear.TabIndex = 8;
+            lblMovieYear.Text = "Year:";
+            // 
+            // lblCategory
+            // 
+            lblCategory.Location = new Point(500, 419);
+            lblCategory.Name = "lblCategory";
+            lblCategory.Size = new Size(100, 23);
+            lblCategory.TabIndex = 9;
+            lblCategory.Text = "Category:";
+            // 
+            // tabUsers
+            // 
+            tabUsers.BackColor = Color.White;
             tabUsers.Controls.Add(dataGridViewUsers);
-            tabUsers.Controls.Add(panelUserInput);
             tabUsers.Controls.Add(btnLoadUsers);
             tabUsers.Controls.Add(btnAddUser);
-
-            dataGridViewUsers.Location = new Point(20, 20);
-            dataGridViewUsers.Size = new Size(580, 300);
-            dataGridViewUsers.BackgroundColor = Color.FromArgb(30, 30, 40);
-            dataGridViewUsers.ForeColor = Color.White;
-            dataGridViewUsers.GridColor = Color.FromArgb(60, 60, 70);
+            tabUsers.Controls.Add(txtUserName);
+            tabUsers.Controls.Add(txtUserEmail);
+            tabUsers.Controls.Add(lblUserName);
+            tabUsers.Controls.Add(lblUserEmail);
+            tabUsers.Location = new Point(4, 26);
+            tabUsers.Name = "tabUsers";
+            tabUsers.Size = new Size(876, 531);
+            tabUsers.TabIndex = 1;
+            tabUsers.Text = " Users ";
+            // 
+            // dataGridViewUsers
+            // 
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(240, 244, 248);
+            dataGridViewUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewUsers.BackgroundColor = Color.White;
             dataGridViewUsers.BorderStyle = BorderStyle.None;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.FromArgb(0, 120, 215);
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle5.ForeColor = Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dataGridViewUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(248, 249, 250);
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle6.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
+            dataGridViewUsers.DefaultCellStyle = dataGridViewCellStyle6;
             dataGridViewUsers.EnableHeadersVisualStyles = false;
-            dataGridViewUsers.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0, 120, 215);
-            dataGridViewUsers.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewUsers.DefaultCellStyle.BackColor = Color.FromArgb(35, 35, 45);
-            dataGridViewUsers.DefaultCellStyle.ForeColor = Color.White;
-            dataGridViewUsers.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(40, 40, 50);
+            dataGridViewUsers.Location = new Point(20, 20);
+            dataGridViewUsers.Name = "dataGridViewUsers";
             dataGridViewUsers.RowHeadersVisible = false;
-
-            panelUserInput.BackColor = Color.FromArgb(45, 45, 55);
-            panelUserInput.BorderStyle = BorderStyle.FixedSingle;
-            panelUserInput.Location = new Point(20, 340);
-            panelUserInput.Size = new Size(580, 100);
-            panelUserInput.Controls.Add(lblUserName);
-            panelUserInput.Controls.Add(txtUserName);
-            panelUserInput.Controls.Add(lblUserEmail);
-            panelUserInput.Controls.Add(txtUserEmail);
-
-            lblUserName.Text = "Name:";
-            lblUserName.ForeColor = Color.White;
-            lblUserName.Location = new Point(20, 20);
-            lblUserName.Size = new Size(60, 25);
-
-            txtUserName.Location = new Point(80, 18);
-            txtUserName.Size = new Size(200, 27);
-            txtUserName.BackColor = Color.FromArgb(60, 60, 70);
-            txtUserName.ForeColor = Color.White;
-
-            lblUserEmail.Text = "Email:";
-            lblUserEmail.ForeColor = Color.White;
-            lblUserEmail.Location = new Point(20, 55);
-            lblUserEmail.Size = new Size(60, 25);
-
-            txtUserEmail.Location = new Point(80, 53);
-            txtUserEmail.Size = new Size(250, 27);
-            txtUserEmail.BackColor = Color.FromArgb(60, 60, 70);
-            txtUserEmail.ForeColor = Color.White;
-
-            btnLoadUsers.Text = "Load Users";
+            dataGridViewUsers.Size = new Size(580, 300);
+            dataGridViewUsers.TabIndex = 0;
+            // 
+            // btnLoadUsers
+            // 
             btnLoadUsers.BackColor = Color.FromArgb(0, 120, 215);
-            btnLoadUsers.ForeColor = Color.White;
             btnLoadUsers.FlatStyle = FlatStyle.Flat;
+            btnLoadUsers.ForeColor = Color.White;
             btnLoadUsers.Location = new Point(630, 30);
+            btnLoadUsers.Name = "btnLoadUsers";
             btnLoadUsers.Size = new Size(140, 40);
-            btnLoadUsers.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            btnLoadUsers.TabIndex = 1;
+            btnLoadUsers.Text = "Load Users";
+            btnLoadUsers.UseVisualStyleBackColor = false;
             btnLoadUsers.Click += btnLoadUsers_Click;
-
-            btnAddUser.Text = "Add User";
+            // 
+            // btnAddUser
+            // 
             btnAddUser.BackColor = Color.FromArgb(40, 167, 69);
-            btnAddUser.ForeColor = Color.White;
             btnAddUser.FlatStyle = FlatStyle.Flat;
+            btnAddUser.ForeColor = Color.White;
             btnAddUser.Location = new Point(630, 90);
+            btnAddUser.Name = "btnAddUser";
             btnAddUser.Size = new Size(140, 40);
-            btnAddUser.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            btnAddUser.TabIndex = 2;
+            btnAddUser.Text = "Add User";
+            btnAddUser.UseVisualStyleBackColor = false;
             btnAddUser.Click += btnAddUser_Click;
-
-            // ==================== REVIEWS TAB ====================
-            tabReviews.Text = " Reviews ";
-            tabReviews.BackColor = Color.FromArgb(25, 25, 35);
+            // 
+            // txtUserName
+            // 
+            txtUserName.Location = new Point(80, 350);
+            txtUserName.Name = "txtUserName";
+            txtUserName.Size = new Size(200, 25);
+            txtUserName.TabIndex = 3;
+            // 
+            // txtUserEmail
+            // 
+            txtUserEmail.Location = new Point(80, 390);
+            txtUserEmail.Name = "txtUserEmail";
+            txtUserEmail.Size = new Size(250, 25);
+            txtUserEmail.TabIndex = 4;
+            // 
+            // lblUserName
+            // 
+            lblUserName.Location = new Point(20, 353);
+            lblUserName.Name = "lblUserName";
+            lblUserName.Size = new Size(100, 23);
+            lblUserName.TabIndex = 5;
+            lblUserName.Text = "Name:";
+            // 
+            // lblUserEmail
+            // 
+            lblUserEmail.Location = new Point(20, 393);
+            lblUserEmail.Name = "lblUserEmail";
+            lblUserEmail.Size = new Size(100, 23);
+            lblUserEmail.TabIndex = 6;
+            lblUserEmail.Text = "Email:";
+            // 
+            // tabReviews
+            // 
+            tabReviews.BackColor = Color.White;
             tabReviews.Controls.Add(dataGridViewReviews);
-            tabReviews.Controls.Add(panelReviewInput);
             tabReviews.Controls.Add(btnLoadReviews);
             tabReviews.Controls.Add(btnAddReview);
-
-            dataGridViewReviews.Location = new Point(20, 20);
-            dataGridViewReviews.Size = new Size(580, 300);
-            dataGridViewReviews.BackgroundColor = Color.FromArgb(30, 30, 40);
-            dataGridViewReviews.ForeColor = Color.White;
-            dataGridViewReviews.GridColor = Color.FromArgb(60, 60, 70);
+            tabReviews.Controls.Add(cmbUserForReview);
+            tabReviews.Controls.Add(cmbMovieForReview);
+            tabReviews.Controls.Add(txtReviewComment);
+            tabReviews.Controls.Add(numRating);
+            tabReviews.Controls.Add(lblReviewUser);
+            tabReviews.Controls.Add(lblReviewMovie);
+            tabReviews.Controls.Add(lblReviewComment);
+            tabReviews.Controls.Add(lblReviewRating);
+            tabReviews.Location = new Point(4, 26);
+            tabReviews.Name = "tabReviews";
+            tabReviews.Size = new Size(876, 531);
+            tabReviews.TabIndex = 2;
+            tabReviews.Text = " Reviews ";
+            // 
+            // dataGridViewReviews
+            // 
+            dataGridViewCellStyle7.BackColor = Color.FromArgb(240, 244, 248);
+            dataGridViewReviews.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewReviews.BackgroundColor = Color.White;
             dataGridViewReviews.BorderStyle = BorderStyle.None;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = Color.FromArgb(0, 120, 215);
+            dataGridViewCellStyle8.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle8.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
+            dataGridViewReviews.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = Color.FromArgb(248, 249, 250);
+            dataGridViewCellStyle9.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle9.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.False;
+            dataGridViewReviews.DefaultCellStyle = dataGridViewCellStyle9;
             dataGridViewReviews.EnableHeadersVisualStyles = false;
-            dataGridViewReviews.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0, 120, 215);
-            dataGridViewReviews.DefaultCellStyle.BackColor = Color.FromArgb(35, 35, 45);
-            dataGridViewReviews.DefaultCellStyle.ForeColor = Color.White;
-            dataGridViewReviews.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(40, 40, 50);
+            dataGridViewReviews.Location = new Point(20, 20);
+            dataGridViewReviews.Name = "dataGridViewReviews";
             dataGridViewReviews.RowHeadersVisible = false;
-
-            panelReviewInput.BackColor = Color.FromArgb(45, 45, 55);
-            panelReviewInput.BorderStyle = BorderStyle.FixedSingle;
-            panelReviewInput.Location = new Point(20, 340);
-            panelReviewInput.Size = new Size(580, 150);
-            panelReviewInput.Controls.Add(lblReviewUser);
-            panelReviewInput.Controls.Add(cmbUserForReview);
-            panelReviewInput.Controls.Add(lblReviewMovie);
-            panelReviewInput.Controls.Add(cmbMovieForReview);
-            panelReviewInput.Controls.Add(lblReviewComment);
-            panelReviewInput.Controls.Add(txtReviewComment);
-            panelReviewInput.Controls.Add(lblReviewRating);
-            panelReviewInput.Controls.Add(numRating);
-
-            lblReviewUser.Text = "User:";
-            lblReviewUser.ForeColor = Color.White;
-            lblReviewUser.Location = new Point(20, 20);
-            lblReviewUser.Size = new Size(60, 25);
-
-            cmbUserForReview.Location = new Point(80, 18);
-            cmbUserForReview.Size = new Size(180, 27);
-            cmbUserForReview.BackColor = Color.FromArgb(60, 60, 70);
-            cmbUserForReview.ForeColor = Color.White;
-            cmbUserForReview.DropDownStyle = ComboBoxStyle.DropDownList;
-
-            lblReviewMovie.Text = "Movie:";
-            lblReviewMovie.ForeColor = Color.White;
-            lblReviewMovie.Location = new Point(280, 20);
-            lblReviewMovie.Size = new Size(60, 25);
-
-            cmbMovieForReview.Location = new Point(340, 18);
-            cmbMovieForReview.Size = new Size(180, 27);
-            cmbMovieForReview.BackColor = Color.FromArgb(60, 60, 70);
-            cmbMovieForReview.ForeColor = Color.White;
-            cmbMovieForReview.DropDownStyle = ComboBoxStyle.DropDownList;
-
-            lblReviewComment.Text = "Comment:";
-            lblReviewComment.ForeColor = Color.White;
-            lblReviewComment.Location = new Point(20, 60);
-            lblReviewComment.Size = new Size(80, 25);
-
-            txtReviewComment.Location = new Point(100, 58);
-            txtReviewComment.Size = new Size(300, 27);
-            txtReviewComment.BackColor = Color.FromArgb(60, 60, 70);
-            txtReviewComment.ForeColor = Color.White;
-
-            lblReviewRating.Text = "Rating (1-5):";
-            lblReviewRating.ForeColor = Color.White;
-            lblReviewRating.Location = new Point(20, 100);
-            lblReviewRating.Size = new Size(100, 25);
-
-            numRating.Location = new Point(120, 98);
-            numRating.Size = new Size(60, 27);
-            numRating.Minimum = 1;
-            numRating.Maximum = 5;
-            numRating.BackColor = Color.FromArgb(60, 60, 70);
-            numRating.ForeColor = Color.White;
-
-            btnLoadReviews.Text = "Load Reviews";
+            dataGridViewReviews.Size = new Size(580, 300);
+            dataGridViewReviews.TabIndex = 0;
+            // 
+            // btnLoadReviews
+            // 
             btnLoadReviews.BackColor = Color.FromArgb(0, 120, 215);
-            btnLoadReviews.ForeColor = Color.White;
             btnLoadReviews.FlatStyle = FlatStyle.Flat;
+            btnLoadReviews.ForeColor = Color.White;
             btnLoadReviews.Location = new Point(630, 30);
+            btnLoadReviews.Name = "btnLoadReviews";
             btnLoadReviews.Size = new Size(140, 40);
-            btnLoadReviews.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            btnLoadReviews.TabIndex = 1;
+            btnLoadReviews.Text = "Load Reviews";
+            btnLoadReviews.UseVisualStyleBackColor = false;
             btnLoadReviews.Click += btnLoadReviews_Click;
-
-            btnAddReview.Text = "Add Review";
+            // 
+            // btnAddReview
+            // 
             btnAddReview.BackColor = Color.FromArgb(255, 193, 7);
-            btnAddReview.ForeColor = Color.Black;
             btnAddReview.FlatStyle = FlatStyle.Flat;
+            btnAddReview.ForeColor = Color.Black;
             btnAddReview.Location = new Point(630, 90);
+            btnAddReview.Name = "btnAddReview";
             btnAddReview.Size = new Size(140, 40);
-            btnAddReview.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            btnAddReview.TabIndex = 2;
+            btnAddReview.Text = "Add Review";
+            btnAddReview.UseVisualStyleBackColor = false;
             btnAddReview.Click += btnAddReview_Click;
-
-            // ==================== WATCHLIST TAB ====================
-            tabWatchlist.Text = " Watchlist ";
-            tabWatchlist.BackColor = Color.FromArgb(25, 25, 35);
+            // 
+            // cmbUserForReview
+            // 
+            cmbUserForReview.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbUserForReview.Location = new Point(80, 350);
+            cmbUserForReview.Name = "cmbUserForReview";
+            cmbUserForReview.Size = new Size(180, 25);
+            cmbUserForReview.TabIndex = 3;
+            // 
+            // cmbMovieForReview
+            // 
+            cmbMovieForReview.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbMovieForReview.Location = new Point(340, 350);
+            cmbMovieForReview.Name = "cmbMovieForReview";
+            cmbMovieForReview.Size = new Size(180, 25);
+            cmbMovieForReview.TabIndex = 4;
+            // 
+            // txtReviewComment
+            // 
+            txtReviewComment.Location = new Point(80, 390);
+            txtReviewComment.Name = "txtReviewComment";
+            txtReviewComment.Size = new Size(300, 25);
+            txtReviewComment.TabIndex = 5;
+            // 
+            // numRating
+            // 
+            numRating.Location = new Point(120, 430);
+            numRating.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
+            numRating.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            numRating.Name = "numRating";
+            numRating.Size = new Size(60, 25);
+            numRating.TabIndex = 6;
+            numRating.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            // 
+            // lblReviewUser
+            // 
+            lblReviewUser.Location = new Point(20, 353);
+            lblReviewUser.Name = "lblReviewUser";
+            lblReviewUser.Size = new Size(100, 23);
+            lblReviewUser.TabIndex = 7;
+            lblReviewUser.Text = "User:";
+            // 
+            // lblReviewMovie
+            // 
+            lblReviewMovie.Location = new Point(280, 353);
+            lblReviewMovie.Name = "lblReviewMovie";
+            lblReviewMovie.Size = new Size(100, 23);
+            lblReviewMovie.TabIndex = 8;
+            lblReviewMovie.Text = "Movie:";
+            // 
+            // lblReviewComment
+            // 
+            lblReviewComment.Location = new Point(20, 393);
+            lblReviewComment.Name = "lblReviewComment";
+            lblReviewComment.Size = new Size(100, 23);
+            lblReviewComment.TabIndex = 9;
+            lblReviewComment.Text = "Comment:";
+            // 
+            // lblReviewRating
+            // 
+            lblReviewRating.Location = new Point(20, 433);
+            lblReviewRating.Name = "lblReviewRating";
+            lblReviewRating.Size = new Size(100, 23);
+            lblReviewRating.TabIndex = 10;
+            lblReviewRating.Text = "Rating (1-5):";
+            // 
+            // tabWatchlist
+            // 
+            tabWatchlist.BackColor = Color.White;
             tabWatchlist.Controls.Add(dataGridViewWatchlist);
-            tabWatchlist.Controls.Add(panelWatchlistInput);
             tabWatchlist.Controls.Add(btnLoadWatchlist);
             tabWatchlist.Controls.Add(btnAddToWatchlist);
             tabWatchlist.Controls.Add(btnRemoveFromWatchlist);
-
-            dataGridViewWatchlist.Location = new Point(20, 20);
-            dataGridViewWatchlist.Size = new Size(580, 300);
-            dataGridViewWatchlist.BackgroundColor = Color.FromArgb(30, 30, 40);
-            dataGridViewWatchlist.ForeColor = Color.White;
-            dataGridViewWatchlist.GridColor = Color.FromArgb(60, 60, 70);
+            tabWatchlist.Controls.Add(cmbUserForWatchlist);
+            tabWatchlist.Controls.Add(cmbMovieForWatchlist);
+            tabWatchlist.Controls.Add(lblWatchlistUser);
+            tabWatchlist.Controls.Add(lblWatchlistMovie);
+            tabWatchlist.Location = new Point(4, 26);
+            tabWatchlist.Name = "tabWatchlist";
+            tabWatchlist.Size = new Size(876, 531);
+            tabWatchlist.TabIndex = 3;
+            tabWatchlist.Text = " Watchlist ";
+            // 
+            // dataGridViewWatchlist
+            // 
+            dataGridViewCellStyle10.BackColor = Color.FromArgb(240, 244, 248);
+            dataGridViewWatchlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewWatchlist.BackgroundColor = Color.White;
             dataGridViewWatchlist.BorderStyle = BorderStyle.None;
+            dataGridViewCellStyle11.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = Color.FromArgb(0, 120, 215);
+            dataGridViewCellStyle11.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle11.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = DataGridViewTriState.True;
+            dataGridViewWatchlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = Color.FromArgb(248, 249, 250);
+            dataGridViewCellStyle12.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle12.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = DataGridViewTriState.False;
+            dataGridViewWatchlist.DefaultCellStyle = dataGridViewCellStyle12;
             dataGridViewWatchlist.EnableHeadersVisualStyles = false;
-            dataGridViewWatchlist.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0, 120, 215);
-            dataGridViewWatchlist.DefaultCellStyle.BackColor = Color.FromArgb(35, 35, 45);
-            dataGridViewWatchlist.DefaultCellStyle.ForeColor = Color.White;
-            dataGridViewWatchlist.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(40, 40, 50);
+            dataGridViewWatchlist.Location = new Point(20, 20);
+            dataGridViewWatchlist.Name = "dataGridViewWatchlist";
             dataGridViewWatchlist.RowHeadersVisible = false;
-
-            panelWatchlistInput.BackColor = Color.FromArgb(45, 45, 55);
-            panelWatchlistInput.BorderStyle = BorderStyle.FixedSingle;
-            panelWatchlistInput.Location = new Point(20, 340);
-            panelWatchlistInput.Size = new Size(580, 100);
-            panelWatchlistInput.Controls.Add(lblWatchlistUser);
-            panelWatchlistInput.Controls.Add(cmbUserForWatchlist);
-            panelWatchlistInput.Controls.Add(lblWatchlistMovie);
-            panelWatchlistInput.Controls.Add(cmbMovieForWatchlist);
-
-            lblWatchlistUser.Text = "User:";
-            lblWatchlistUser.ForeColor = Color.White;
-            lblWatchlistUser.Location = new Point(20, 25);
-            lblWatchlistUser.Size = new Size(60, 25);
-
-            cmbUserForWatchlist.Location = new Point(80, 23);
-            cmbUserForWatchlist.Size = new Size(180, 27);
-            cmbUserForWatchlist.BackColor = Color.FromArgb(60, 60, 70);
-            cmbUserForWatchlist.ForeColor = Color.White;
-            cmbUserForWatchlist.DropDownStyle = ComboBoxStyle.DropDownList;
-
-            lblWatchlistMovie.Text = "Movie:";
-            lblWatchlistMovie.ForeColor = Color.White;
-            lblWatchlistMovie.Location = new Point(280, 25);
-            lblWatchlistMovie.Size = new Size(60, 25);
-
-            cmbMovieForWatchlist.Location = new Point(340, 23);
-            cmbMovieForWatchlist.Size = new Size(180, 27);
-            cmbMovieForWatchlist.BackColor = Color.FromArgb(60, 60, 70);
-            cmbMovieForWatchlist.ForeColor = Color.White;
-            cmbMovieForWatchlist.DropDownStyle = ComboBoxStyle.DropDownList;
-
-            btnLoadWatchlist.Text = "Load Watchlist";
+            dataGridViewWatchlist.Size = new Size(580, 300);
+            dataGridViewWatchlist.TabIndex = 0;
+            // 
+            // btnLoadWatchlist
+            // 
             btnLoadWatchlist.BackColor = Color.FromArgb(0, 120, 215);
-            btnLoadWatchlist.ForeColor = Color.White;
             btnLoadWatchlist.FlatStyle = FlatStyle.Flat;
+            btnLoadWatchlist.ForeColor = Color.White;
             btnLoadWatchlist.Location = new Point(630, 30);
-            btnLoadWatchlist.Size = new Size(140, 40);
-            btnLoadWatchlist.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            btnLoadWatchlist.Name = "btnLoadWatchlist";
+            btnLoadWatchlist.Size = new Size(160, 40);
+            btnLoadWatchlist.TabIndex = 1;
+            btnLoadWatchlist.Text = "Load Watchlist";
+            btnLoadWatchlist.UseVisualStyleBackColor = false;
             btnLoadWatchlist.Click += btnLoadWatchlist_Click;
-
-            btnAddToWatchlist.Text = "Add to Watchlist";
+            // 
+            // btnAddToWatchlist
+            // 
             btnAddToWatchlist.BackColor = Color.FromArgb(40, 167, 69);
-            btnAddToWatchlist.ForeColor = Color.White;
             btnAddToWatchlist.FlatStyle = FlatStyle.Flat;
+            btnAddToWatchlist.ForeColor = Color.White;
             btnAddToWatchlist.Location = new Point(630, 90);
-            btnAddToWatchlist.Size = new Size(140, 40);
-            btnAddToWatchlist.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            btnAddToWatchlist.Name = "btnAddToWatchlist";
+            btnAddToWatchlist.Size = new Size(160, 40);
+            btnAddToWatchlist.TabIndex = 2;
+            btnAddToWatchlist.Text = "Add to Watchlist";
+            btnAddToWatchlist.UseVisualStyleBackColor = false;
             btnAddToWatchlist.Click += btnAddToWatchlist_Click;
-
-            btnRemoveFromWatchlist.Text = "Remove from Watchlist";
+            // 
+            // btnRemoveFromWatchlist
+            // 
             btnRemoveFromWatchlist.BackColor = Color.FromArgb(220, 53, 69);
-            btnRemoveFromWatchlist.ForeColor = Color.White;
             btnRemoveFromWatchlist.FlatStyle = FlatStyle.Flat;
+            btnRemoveFromWatchlist.ForeColor = Color.White;
             btnRemoveFromWatchlist.Location = new Point(630, 150);
-            btnRemoveFromWatchlist.Size = new Size(150, 40);
-            btnRemoveFromWatchlist.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+            btnRemoveFromWatchlist.Name = "btnRemoveFromWatchlist";
+            btnRemoveFromWatchlist.Size = new Size(160, 40);
+            btnRemoveFromWatchlist.TabIndex = 3;
+            btnRemoveFromWatchlist.Text = "Remove from Watchlist";
+            btnRemoveFromWatchlist.UseVisualStyleBackColor = false;
             btnRemoveFromWatchlist.Click += btnRemoveFromWatchlist_Click;
-
-            // ==================== REPORTS TAB ====================
-            tabReports.Text = " Reports ";
-            tabReports.BackColor = Color.FromArgb(25, 25, 35);
+            // 
+            // cmbUserForWatchlist
+            // 
+            cmbUserForWatchlist.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbUserForWatchlist.Location = new Point(80, 350);
+            cmbUserForWatchlist.Name = "cmbUserForWatchlist";
+            cmbUserForWatchlist.Size = new Size(180, 25);
+            cmbUserForWatchlist.TabIndex = 4;
+            // 
+            // cmbMovieForWatchlist
+            // 
+            cmbMovieForWatchlist.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbMovieForWatchlist.Location = new Point(340, 350);
+            cmbMovieForWatchlist.Name = "cmbMovieForWatchlist";
+            cmbMovieForWatchlist.Size = new Size(180, 25);
+            cmbMovieForWatchlist.TabIndex = 5;
+            // 
+            // lblWatchlistUser
+            // 
+            lblWatchlistUser.Location = new Point(20, 353);
+            lblWatchlistUser.Name = "lblWatchlistUser";
+            lblWatchlistUser.Size = new Size(100, 23);
+            lblWatchlistUser.TabIndex = 6;
+            lblWatchlistUser.Text = "User:";
+            // 
+            // lblWatchlistMovie
+            // 
+            lblWatchlistMovie.Location = new Point(280, 353);
+            lblWatchlistMovie.Name = "lblWatchlistMovie";
+            lblWatchlistMovie.Size = new Size(100, 23);
+            lblWatchlistMovie.TabIndex = 7;
+            lblWatchlistMovie.Text = "Movie:";
+            // 
+            // tabReports
+            // 
+            tabReports.BackColor = Color.White;
             tabReports.Controls.Add(dataGridViewReports);
-            tabReports.Controls.Add(panelReportsInput);
             tabReports.Controls.Add(btnTopRated);
             tabReports.Controls.Add(btnFilterByCategory);
-
-            dataGridViewReports.Location = new Point(20, 20);
-            dataGridViewReports.Size = new Size(580, 300);
-            dataGridViewReports.BackgroundColor = Color.FromArgb(30, 30, 40);
-            dataGridViewReports.ForeColor = Color.White;
-            dataGridViewReports.GridColor = Color.FromArgb(60, 60, 70);
+            tabReports.Controls.Add(cmbFilterCategory);
+            tabReports.Controls.Add(lblFilterCategory);
+            tabReports.Location = new Point(4, 26);
+            tabReports.Name = "tabReports";
+            tabReports.Size = new Size(876, 531);
+            tabReports.TabIndex = 4;
+            tabReports.Text = " Reports ";
+            // 
+            // dataGridViewReports
+            // 
+            dataGridViewCellStyle13.BackColor = Color.FromArgb(240, 244, 248);
+            dataGridViewReports.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewReports.BackgroundColor = Color.White;
             dataGridViewReports.BorderStyle = BorderStyle.None;
+            dataGridViewCellStyle14.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = Color.FromArgb(0, 120, 215);
+            dataGridViewCellStyle14.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle14.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = DataGridViewTriState.True;
+            dataGridViewReports.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle15.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = Color.FromArgb(248, 249, 250);
+            dataGridViewCellStyle15.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle15.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle15.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = DataGridViewTriState.False;
+            dataGridViewReports.DefaultCellStyle = dataGridViewCellStyle15;
             dataGridViewReports.EnableHeadersVisualStyles = false;
-            dataGridViewReports.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0, 120, 215);
-            dataGridViewReports.DefaultCellStyle.BackColor = Color.FromArgb(35, 35, 45);
-            dataGridViewReports.DefaultCellStyle.ForeColor = Color.White;
-            dataGridViewReports.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(40, 40, 50);
+            dataGridViewReports.Location = new Point(20, 20);
+            dataGridViewReports.Name = "dataGridViewReports";
             dataGridViewReports.RowHeadersVisible = false;
-
-            panelReportsInput.BackColor = Color.FromArgb(45, 45, 55);
-            panelReportsInput.BorderStyle = BorderStyle.FixedSingle;
-            panelReportsInput.Location = new Point(20, 340);
-            panelReportsInput.Size = new Size(580, 80);
-            panelReportsInput.Controls.Add(lblFilterCategory);
-            panelReportsInput.Controls.Add(cmbFilterCategory);
-
-            lblFilterCategory.Text = "Filter by Category:";
-            lblFilterCategory.ForeColor = Color.White;
-            lblFilterCategory.Location = new Point(20, 28);
-            lblFilterCategory.Size = new Size(130, 25);
-
-            cmbFilterCategory.Location = new Point(160, 26);
-            cmbFilterCategory.Size = new Size(150, 27);
-            cmbFilterCategory.BackColor = Color.FromArgb(60, 60, 70);
-            cmbFilterCategory.ForeColor = Color.White;
-            cmbFilterCategory.DropDownStyle = ComboBoxStyle.DropDownList;
-
-            btnTopRated.Text = "Top Rated Movies";
+            dataGridViewReports.Size = new Size(580, 300);
+            dataGridViewReports.TabIndex = 0;
+            // 
+            // btnTopRated
+            // 
             btnTopRated.BackColor = Color.FromArgb(255, 193, 7);
-            btnTopRated.ForeColor = Color.Black;
             btnTopRated.FlatStyle = FlatStyle.Flat;
+            btnTopRated.ForeColor = Color.Black;
             btnTopRated.Location = new Point(630, 30);
+            btnTopRated.Name = "btnTopRated";
             btnTopRated.Size = new Size(180, 50);
-            btnTopRated.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            btnTopRated.TabIndex = 1;
+            btnTopRated.Text = "Top Rated Movies";
+            btnTopRated.UseVisualStyleBackColor = false;
             btnTopRated.Click += btnTopRated_Click;
-
-            btnFilterByCategory.Text = "Filter by Category";
+            // 
+            // btnFilterByCategory
+            // 
             btnFilterByCategory.BackColor = Color.FromArgb(23, 162, 184);
-            btnFilterByCategory.ForeColor = Color.White;
             btnFilterByCategory.FlatStyle = FlatStyle.Flat;
+            btnFilterByCategory.ForeColor = Color.White;
             btnFilterByCategory.Location = new Point(630, 100);
+            btnFilterByCategory.Name = "btnFilterByCategory";
             btnFilterByCategory.Size = new Size(180, 50);
-            btnFilterByCategory.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            btnFilterByCategory.TabIndex = 2;
+            btnFilterByCategory.Text = "Filter by Category";
+            btnFilterByCategory.UseVisualStyleBackColor = false;
             btnFilterByCategory.Click += btnFilterByCategory_Click;
-
-            // ==================== FORM SETUP ====================
-            this.Controls.Add(tabControl1);
-            this.Size = new Size(950, 680);
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.Text = "Movie Streaming System - Complete Solution";
-            this.BackColor = Color.FromArgb(20, 20, 30);
+            // 
+            // cmbFilterCategory
+            // 
+            cmbFilterCategory.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbFilterCategory.Location = new Point(160, 380);
+            cmbFilterCategory.Name = "cmbFilterCategory";
+            cmbFilterCategory.Size = new Size(150, 25);
+            cmbFilterCategory.TabIndex = 3;
+            // 
+            // lblFilterCategory
+            // 
+            lblFilterCategory.Location = new Point(20, 383);
+            lblFilterCategory.Name = "lblFilterCategory";
+            lblFilterCategory.Size = new Size(100, 23);
+            lblFilterCategory.TabIndex = 4;
+            lblFilterCategory.Text = "Filter by Category:";
+            // 
+            // Form1
+            // 
+            BackColor = Color.FromArgb(240, 244, 248);
+            ClientSize = new Size(884, 561);
+            Controls.Add(tabControl1);
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Movie Streaming System";
+            tabControl1.ResumeLayout(false);
+            tabMovies.ResumeLayout(false);
+            tabMovies.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMovies).EndInit();
+            tabUsers.ResumeLayout(false);
+            tabUsers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).EndInit();
+            tabReviews.ResumeLayout(false);
+            tabReviews.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewReviews).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numRating).EndInit();
+            tabWatchlist.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewWatchlist).EndInit();
+            tabReports.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewReports).EndInit();
+            ResumeLayout(false);
         }
 
-        // ==================== DECLARATIONS ====================
         private TabControl tabControl1;
         private TabPage tabMovies, tabUsers, tabReviews, tabWatchlist, tabReports;
-
-        // Movies
-        private DataGridView dataGridViewMovies;
-        private Button btnLoadMovies, btnAddMovie, btnSoftDeleteMovie;
-        private TextBox txtMovieTitle, txtMovieYear;
-        private ComboBox cmbCategory;
-        private Label lblMovieTitle, lblMovieYear, lblCategory;
-        private Panel panelMovieInput;
-
-        // Users
-        private DataGridView dataGridViewUsers;
-        private Button btnLoadUsers, btnAddUser;
-        private TextBox txtUserName, txtUserEmail;
-        private Label lblUserName, lblUserEmail;
-        private Panel panelUserInput;
-
-        // Reviews
-        private DataGridView dataGridViewReviews;
-        private Button btnLoadReviews, btnAddReview;
-        private ComboBox cmbMovieForReview, cmbUserForReview;
-        private TextBox txtReviewComment;
+        private DataGridView dataGridViewMovies, dataGridViewUsers, dataGridViewReviews, dataGridViewWatchlist, dataGridViewReports;
+        private Button btnLoadMovies, btnAddMovie, btnSoftDeleteMovie, btnLoadUsers, btnAddUser, btnLoadReviews, btnAddReview, btnLoadWatchlist, btnAddToWatchlist, btnRemoveFromWatchlist, btnTopRated, btnFilterByCategory;
+        private TextBox txtMovieTitle, txtMovieYear, txtUserName, txtUserEmail, txtReviewComment;
+        private ComboBox cmbCategory, cmbUserForReview, cmbMovieForReview, cmbUserForWatchlist, cmbMovieForWatchlist, cmbFilterCategory;
         private NumericUpDown numRating;
-        private Label lblReviewMovie, lblReviewUser, lblReviewComment, lblReviewRating;
-        private Panel panelReviewInput;
-
-        // Watchlist
-        private DataGridView dataGridViewWatchlist;
-        private Button btnLoadWatchlist, btnAddToWatchlist, btnRemoveFromWatchlist;
-        private ComboBox cmbUserForWatchlist, cmbMovieForWatchlist;
-        private Label lblWatchlistUser, lblWatchlistMovie;
-        private Panel panelWatchlistInput;
-
-        // Reports
-        private DataGridView dataGridViewReports;
-        private Button btnTopRated, btnFilterByCategory;
-        private ComboBox cmbFilterCategory;
-        private Label lblFilterCategory;
-        private Panel panelReportsInput;
+        private Label lblMovieTitle, lblMovieYear, lblCategory, lblUserName, lblUserEmail, lblReviewUser, lblReviewMovie, lblReviewComment, lblReviewRating, lblWatchlistUser, lblWatchlistMovie, lblFilterCategory;
     }
 }

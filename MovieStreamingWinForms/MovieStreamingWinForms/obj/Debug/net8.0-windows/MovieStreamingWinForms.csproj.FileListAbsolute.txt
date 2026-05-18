@@ -128,3 +128,7 @@ C:\Users\noura\OneDrive\المستندات\W5\MovieStreamingWinForms\MovieStream
 C:\Users\noura\OneDrive\المستندات\W5\MovieStreamingWinForms\MovieStreamingWinForms\obj\Debug\net8.0-windows\MovieStreamingWinForms.pdb
 C:\Users\noura\OneDrive\المستندات\W5\MovieStreamingWinForms\MovieStreamingWinForms\obj\Debug\net8.0-windows\MovieStreamingWinForms.genruntimeconfig.cache
 C:\Users\noura\OneDrive\المستندات\W5\MovieStreamingWinForms\MovieStreamingWinForms\obj\Debug\net8.0-windows\ref\MovieStreamingWinForms.dll
+C:\Users\noura\OneDrive\المستندات\W5\MovieStreamingWinForms\MovieStreamingWinForms\obj\Debug\net8.0-windows\MovieStreamingWinForms.FormLogin.resources
+C:\Users\noura\OneDrive\المستندات\W5\MovieStreamingWinForms\MovieStreamingWinForms\obj\Debug\net8.0-windows\MovieStreamingWinForms.FormRegister.resources
+C:\Users\noura\OneDrive\المستندات\W5\MovieStreamingWinForms\MovieStreamingWinForms\obj\Debug\net8.0-windows\MovieStreamingWinForms.sourcelink.json
+C:\Users\noura\OneDrive\المستندات\W5\MovieStreamingWinForms\MovieStreamingWinForms\bin\Debug\net8.0-windows\BCrypt-Net-Next.dll

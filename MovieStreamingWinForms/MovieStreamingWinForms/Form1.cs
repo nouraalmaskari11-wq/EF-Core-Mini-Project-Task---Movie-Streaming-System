@@ -1,8 +1,10 @@
 using System;
 using System.Linq;
 using System.Windows.Forms;
+using Microsoft.EntityFrameworkCore;
 using MovieStreamingWinForms.Data;
 using MovieStreamingWinForms.Models;
+using BCrypt.Net;
 
 namespace MovieStreamingWinForms
 {
@@ -14,6 +16,11 @@ namespace MovieStreamingWinForms
             LoadCategories();
             LoadUsersForCombo();
             LoadMoviesForCombo();
+
+            if (FormLogin.LoggedInUser != null)
+            {
+                this.Text = $"Movie Streaming System - Welcome {FormLogin.LoggedInUser.Name} ({FormLogin.LoggedInUser.Role})";
+            }
         }
 
         // ==================== HELPER METHODS ====================
@@ -63,21 +70,13 @@ namespace MovieStreamingWinForms
             }
         }
 
-        private void RefreshAll()
-        {
-            LoadMovies();
-            LoadUsers();
-            LoadReviews();
-            LoadWatchlist();
-        }
-
         // ==================== MOVIES CRUD ====================
 
         private void LoadMovies()
         {
             using (var context = new ApplicationDbContext())
             {
-                var movies = context.Movies.Select(m => new
+                var movies = context.Movies.Include(m => m.Category).Select(m => new
                 {
                     m.Id,
                     m.Title,
@@ -166,6 +165,7 @@ namespace MovieStreamingWinForms
                     u.Id,
                     u.Name,
                     u.Email,
+                    u.Role,
                     u.CreatedAt
                 }).ToList();
 
@@ -192,13 +192,15 @@ namespace MovieStreamingWinForms
                 {
                     Name = txtUserName.Text,
                     Email = txtUserEmail.Text,
+                    PasswordHash = BCrypt.Net.BCrypt.HashPassword("admin123"),
+                    Role = "User",
                     CreatedAt = DateTime.Now
                 };
 
                 context.Users.Add(user);
                 context.SaveChanges();
 
-                MessageBox.Show("User added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("User added successfully! Default password: 123456", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtUserName.Text = "";
                 txtUserEmail.Text = "";
                 LoadUsers();
@@ -212,7 +214,7 @@ namespace MovieStreamingWinForms
         {
             using (var context = new ApplicationDbContext())
             {
-                var reviews = context.Reviews.Select(r => new
+                var reviews = context.Reviews.Include(r => r.User).Include(r => r.Movie).Select(r => new
                 {
                     r.Id,
                     User = r.User.Name,
@@ -266,7 +268,7 @@ namespace MovieStreamingWinForms
         {
             using (var context = new ApplicationDbContext())
             {
-                var watchlist = context.Watchlists.Select(w => new
+                var watchlist = context.Watchlists.Include(w => w.User).Include(w => w.Movie).Select(w => new
                 {
                     w.UserId,
                     User = w.User.Name,
@@ -297,7 +299,6 @@ namespace MovieStreamingWinForms
 
             using (var context = new ApplicationDbContext())
             {
-                // Bonus: Prevent duplicate movies in Watchlist
                 bool exists = context.Watchlists.Any(w => w.UserId == userId && w.MovieId == movieId);
                 if (exists)
                 {
@@ -344,7 +345,7 @@ namespace MovieStreamingWinForms
             }
         }
 
-        // ==================== REPORTS & BONUS ====================
+        // ==================== REPORTS ====================
 
         private void btnTopRated_Click(object sender, EventArgs e)
         {
